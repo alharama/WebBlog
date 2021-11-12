@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <a href="index.html"> September 3rd Blog</a>
+    <a href="second_blog.html"> September 17th Blog</a>
+    <a href="Sept_23.html"> September 23rd Blog</a>
+    <a href="Oct_7.html"> October 7th Blog</a>
+    <a href="Nov_5.html"> November 5th Blog</a>
+    <a href="Nov_12.html"> November 12th Blog</a>
+
+    <title>November 12th Blog</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <h1>Creating a Real Time Sports Web Service</h1>
+
+    <p id="writeup">
+      As we come to the end of our time in CS347 Web development, I'm starting
+      to understand the process better of creating Web services and
+      applications. With this newfound knowledge I've already begun thinking of
+      projects that I could explore in my own time that feed to my interests and
+      hobbies. When quarantine first began, I attempted to create a sports
+      statistics web application, but became quickly discouraged as I head no
+      experience in web development. When looking through examples online of
+      sports web services, I stumbled upon a real time sports application
+      tutorial by Jamie Munro. He uses Node.js, express, Socket.io, and
+      MySportsFeed.com to display live game scores across the NHL.
+    </p>
+
+    <p id="writeup">
+      The process of creating the web application includes setting up the
+      server-client interaction, getting the sports data from the API, and
+      creating scripts for real life updates. The application populates the most
+      recent data when clients first enter the server and uses a set interval
+      time to refresh the data. On the clients end, Munro creates a simple
+      template to display the game scores. He uses JsRender to handle the
+      incoming JSON object sent from the server. Overall, the process does not
+      seem too different from the information we have learned in our class. I
+      look forward to creating my own Web application including my favorite
+      sports and hopefully continue to add different functionalities over time!
+    </p>
+
+    <h2>Example Code To Retrieve Live NHL Data From MySportsFeed</h2>
+
+    <pre>
+
+        exports.getData = function() {
+
+            return msf.getData('nhl', '2017-2018-regular', 'scoreboard',
+            fordate: today.getFullYear() + ('0' + parseInt(today.getMoth() + 1)).slice(-2) +
+            ('0' + today.getDate()).slice(-2),
+            force: true
+        });
+        };
+    </pre>
+  </body>
+</html>
