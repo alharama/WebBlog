@@ -6,6 +6,10 @@
     <a href="Sept_23.html"> September 23rd Blog</a>
     <a href="Oct_7.html"> October 7th Blog</a>
     <a href="Nov_5.html"> November 5th Blog</a>
+    <a href="Nov_12.html"> November 12th Blog</a>
+    <a href="Nov_19.html"> November 19th Blog</a>
+    <a href="Dec_3rd.html"> December 3rd Blog</a>
+    <a href="FinalBlog.html"> Final Blog</a>
 
     <title>November 5th Blog</title>
 
@@ -13,16 +17,22 @@
       h2 {
         text-decoration: underline;
       }
-      a {
-        text-decoration: underline;
-        color: rgb(5, 104, 5);
-      }
-      a:visited {
-        text-decoration: none;
-      }
 
       #writeup {
         text-indent: 30px;
+      }
+
+      body {
+        background-color: rgb(158, 221, 158);
+      }
+
+      img {
+        
+        float: right;
+        padding-right: 15%;
+        width: 50;
+        height: 50;
+        
       }
     </style>
   </head>
@@ -55,7 +65,8 @@
     </p>
 
     <h2>Here is an example authorization request using express</h2>
-
+<p>
+    <img src="spotify_logo.png" alt="Spotify logo" />
     <pre>
             const express = require('express');
             const querystring = require('querystring');
@@ -72,15 +83,16 @@
                     redirect_uri: process.env.SPOTIFY_REDIRECT_URI,
             })}`);
             });
-        </pre
-    >
+    </pre>
+</p>
+    
 
     Reference:
     <a
       href="https://javascript.plainenglish.io/accessing-the-spotifyalgorithm-full-stack-application-tutorial-part-1-792a2c0ff13"
       target="_blank"
     >
-      "Let’s Build A Full Stack App With The Spotify Algorithm and API" by Josh
+      "Lets Build A Full Stack App With The Spotify Algorithm and API by Josh
       Streger</a
     >
   </body>
